@@ -1,0 +1,274 @@
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 5px 10px;
+    font-family: sans-serif;
+}
+a{
+    color: #3081D0;
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    height: 150px;
+    background-color: #303092;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+.logoPerson img{
+    height: 100%;
+}
+.headerBox{
+    float: right;
+    padding: 32px 120px 32px 16px;
+}
+header .mainHeading{
+    color: lightblue;
+    font-size: 3.5rem;
+    text-align: left;
+}
+header .headerBox .headerNav{
+    font-size: 1.2rem;
+    margin-top: 10px;
+    display: flex;
+    gap: 8px;
+}
+header .headerBox .headerNav a,header .headerBox .headerNav a:visited{
+    padding: 2px;
+    border-radius: 0px;
+    text-decoration: none;
+    color: white;
+}
+header .headerBox .headerNav a:hover,header .headerBox .headerNav a:focus{
+    color: #303092;
+    background-color: lightblue;
+}
+
+.gridBody{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    border: 2px solid rgb(66, 66, 169);
+    margin-top: 160px;
+    padding: 8px;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+aside{
+    /* background-color: rgba(196, 216, 255, 0.544); */
+    margin-right: 8px;
+    position: relative;
+}
+.searchBox{
+    background-color: white;
+    padding: 16px;
+    border: 2px dashed #303092;
+    font-size: 1.1rem;
+}
+.searchBox input{
+    border: 2px solid #303092;
+    background-color: lightblue;
+    margin-bottom: 8px;
+}
+.searchBox label{
+    font-weight: bold;
+    cursor: pointer;
+}
+.searchBox button{
+    background-color: rgb(34, 119, 237);
+    width: 48px;
+    font-size: 1rem;
+    color: #fff;
+    float: right;
+    cursor: pointer;
+    box-shadow: 3px 0px rgb(107, 106, 106);
+}
+.searchBox button:hover{
+    background-color: rgb(34, 119, 237,0.75);
+    position: relative;
+    bottom: 1px;
+}
+
+aside .asideNav{
+    width: 100%;
+    background-color: white;
+    padding: 16px;
+    border: 2px dashed #303092;
+    margin-top: 5px;
+}
+aside .asideNav a,aside .asideNav a:visited{
+    font-weight: 0;
+    padding: 0px 8px;
+    display: block;
+ 
+    text-decoration: none;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+aside .asideNav a:hover,aside .asideNav a:focus{
+    background-color: rgb(222, 240, 246);
+}
+
+aside img{
+    margin: 10px 0;
+    width: 100%;
+    height: 100%;
+}
+
+.box{
+    border: 2px solid #303092;
+    break-inside: avoid-column;
+}
+.boxHeading{
+    font-size: 1.2rem;
+    background-color: #303092;
+    color: #fff;
+    padding: 5px;
+}
+.profileBoxHeading .place{
+    float: right;
+    margin-right: 10px;
+}
+.profileElement{
+    margin: 0 10px 10px 10px;
+    font-size: 1.1rem;
+}
+.pEContent{
+    padding: 8px;
+}
+
+.profileDisplay .columnDisplay{
+    margin-top: 10px;
+    columns: 2;
+}
+.profileDisplay .columnDisplay .profileImg .imgContainer{
+    padding: 10px 10px;
+}
+.profileDisplay .columnDisplay .profileImg img{
+    width: 250px;
+    height: 250px;
+    margin: 0 50%;
+    transform: translateX(-50%);
+}
+.profileDisplay .columnDisplay .interactionElement .pEContent{
+    padding: 0;
+}
+.profileDisplay .columnDisplay .interactionElement a,.profileDisplay .columnDisplay .interactionElement a:visited{
+    display: block;
+    text-decoration: none;
+    margin-top: -3px;
+    /* but this makes gap to reduce*/
+    border: 3px solid #303092;
+    padding: 5px 8px;
+}
+.profileDisplay .columnDisplay .interactionElement a:hover,.profileDisplay .columnDisplay .interactionElement a:focus{
+    text-decoration: underline;
+    /* background-color: rgb(219, 240, 247); */
+}
+
+.profileDisplay .columnDisplay .mutualFriends a{
+    text-decoration: none;
+    color: #3081D0;
+}
+.profileDisplay .columnDisplay .mutualFriends a:hover{
+    text-decoration: underline;
+    color: #3081D0;
+}
+.profileDisplay .columnDisplay .friendsProfileImgs {
+    display: flex;
+    gap: 50px;
+    padding: 20px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.profileDisplay .columnDisplay .friendsProfile .imgContainer img{
+    height: 150px;
+    width: 150px;
+}
+.profileDisplay .columnDisplay .friendsProfile .imgContainer footer{
+    text-align: center;
+}
+
+.profileDisplay .columnDisplay .information .pEContent table .infoSectionHeading {
+    text-align: left;
+    line-height: 2rem;
+}
+.profileDisplay .columnDisplay .information .pEContent table .infoSectionHeading th::after,.profileDisplay .columnDisplay .information .pEContent table .key::after{
+    content: ":";
+}
+.profileDisplay .columnDisplay .information .pEContent table .key{
+    width: 20%;
+    vertical-align: top;
+}
+.profileDisplay .columnDisplay .information .pEContent table a:hover,.profileDisplay .columnDisplay .information .pEContent table a:focus{
+    text-decoration: underline;
+}
+
+.aboutSection{
+    margin: 10px 0px;
+    font-size: 1.2rem;
+}
+.aboutSection h2{
+    text-align: center;
+    padding: 25px;
+}
+.aboutSection .box{
+    margin: 0px 50px 25px;
+}
+.aboutSection .box .content{
+    padding: 20px;
+}
+.aboutSection .box table td{
+    padding: 10px 15px;
+}
+.aboutSection .box table{
+    margin-bottom: 50px;
+}
+.aboutSection a:hover,.aboutSection a:focus{
+    text-decoration: underline;
+}
+.aboutSection .homeBtn{
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+}
+.aboutSection .homeBtn button{
+    background-color: rgb(34, 119, 237);
+    padding: 0;
+    font-size: 1.1rem;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 3px 0px rgb(107, 106, 106);
+}
+.aboutSection .homeBtn button a,.aboutSection .homeBtn button a:visited{
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 5px;
+    background-color: rgb(34, 119, 237);
+    display: block;
+}
+.aboutSection .homeBtn button a:hover,.aboutSection .homeBtn button a:focus{
+    text-decoration: none;
+    background-color: rgb(103, 160, 239);
+    position: relative;
+    bottom: 1px;
+}
+
+.mainFooter{
+    text-align: center;
+    padding: 25px;
+    background-color: #303092;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.mainFooter ul{
+    list-style-type: none;
+}
