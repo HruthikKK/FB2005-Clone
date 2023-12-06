@@ -60,7 +60,7 @@ header .headerBox .headerNav a:hover,header .headerBox .headerNav a:focus{
     display: grid;
     grid-template-columns: 1fr 8fr;
     border: 2px solid rgb(66, 66, 169);
-    margin-top: 160px;
+    margin-top: 120px;
     padding: 8px;
     overflow-y: hidden;
     overflow-x: auto;
