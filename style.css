@@ -3,9 +3,10 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body{
-    margin: 5px 10px;
     font-family: sans-serif;
 }
 a{
@@ -14,12 +15,13 @@ a{
 }
 header{
     width: 100%;
-    height: 150px;
+    height: 110px;
     background-color: #303092;
     display: flex;
+    margin: unset;
     justify-content: space-between;
     position: fixed;
-    top: 0px;
+    top: 0;
     z-index: 1;
 }
 .logoPerson img{
@@ -27,15 +29,17 @@ header{
 }
 .headerBox{
     float: right;
-    padding: 32px 120px 32px 16px;
+    padding: 12px 120px 0 16px;
 }
 header .mainHeading{
-    color: lightblue;
-    font-size: 3.5rem;
+    color: #add8e6;
+    font-size: 2.7rem;
+    /*  */
     text-align: left;
 }
 header .headerBox .headerNav{
-    font-size: 1.2rem;
+    font-size: 1rem;
+    /*  */
     margin-top: 10px;
     display: flex;
     gap: 8px;
@@ -48,11 +52,11 @@ header .headerBox .headerNav a,header .headerBox .headerNav a:visited{
 }
 header .headerBox .headerNav a:hover,header .headerBox .headerNav a:focus{
     color: #303092;
-    background-color: lightblue;
+    background-color: #add8e6;
 }
 
 .gridBody{
-    width: 100%;
+    margin: 5px 10px;
     display: grid;
     grid-template-columns: 1fr 8fr;
     border: 2px solid rgb(66, 66, 169);
@@ -70,12 +74,13 @@ aside{
     background-color: white;
     padding: 16px;
     border: 2px dashed #303092;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
-.searchBox input{
+.searchBox input {
     border: 2px solid #303092;
-    background-color: lightblue;
+    background-color: #dfebef;
     margin-bottom: 8px;
+    font-family: inherit;
 }
 .searchBox label{
     font-weight: bold;
@@ -109,8 +114,8 @@ aside .asideNav a,aside .asideNav a:visited{
     display: block;
  
     text-decoration: none;
-    font-size: 1.2rem;
-    line-height: 2rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
 aside .asideNav a:hover,aside .asideNav a:focus{
     background-color: rgb(222, 240, 246);
@@ -127,7 +132,7 @@ aside img{
     break-inside: avoid-column;
 }
 .boxHeading{
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     background-color: #303092;
     color: #fff;
     padding: 5px;
@@ -138,7 +143,7 @@ aside img{
 }
 .profileElement{
     margin: 0 10px 10px 10px;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 .pEContent{
     padding: 8px;
@@ -198,7 +203,7 @@ aside img{
 
 .profileDisplay .columnDisplay .information .pEContent table .infoSectionHeading {
     text-align: left;
-    line-height: 2rem;
+    line-height: 1.1rem;
 }
 .profileDisplay .columnDisplay .information .pEContent table .infoSectionHeading th::after,.profileDisplay .columnDisplay .information .pEContent table .key::after{
     content: ":";
@@ -212,8 +217,8 @@ aside img{
 }
 
 .aboutSection{
-    margin: 10px 0px;
-    font-size: 1.2rem;
+    margin: 10px 10px;
+    font-size: 1rem;
 }
 .aboutSection h2{
     text-align: center;
@@ -242,14 +247,14 @@ aside img{
 .aboutSection .homeBtn button{
     background-color: rgb(34, 119, 237);
     padding: 0;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #fff;
     cursor: pointer;
     box-shadow: 3px 0px rgb(107, 106, 106);
 }
 .aboutSection .homeBtn button a,.aboutSection .homeBtn button a:visited{
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 5px;
     background-color: rgb(34, 119, 237);
     display: block;
@@ -266,7 +271,7 @@ aside img{
     padding: 25px;
     background-color: #303092;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .mainFooter ul{
